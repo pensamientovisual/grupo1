@@ -1,14 +1,7 @@
 
-.foto1 { 
-    padding-top: 2000px; 
-    margin: 0px; 
-    border: 0px solid black; 
-    float: right; 
-    width: 200px;
-    margin-top: 10px; 
-    text-align: center;}
+.foto1 { padding: 10px; margin: 10px; float: left; width: 100px; }
 
 .foto2 {  
     background-color: green;
-border-radius: 10px;}
+    border-radius: 150px;}
 
