@@ -6,13 +6,18 @@
     border-radius: 150px;
     width: 50px;}
 
-.caja {
-        font-family: Impact;
-        font-size: 18px;
-        font-weight: 400;
-        color: #ffffff;
-        background: #414141;
-        margin: 0 0 25px;
-        overflow: hidden;
-        padding: 20px;
-        }
+
+.caja { 
+            font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+            color: #ffffff; 
+            font-size: 18px; 
+            font-weight: 400; 
+            text-align: center; 
+            background: #4d4d4d;
+            margin: 0 0 25px; 
+            overflow: hidden; 
+            padding: 20px; 
+            border-radius: 10px 10px 10px 10px; 
+            -moz-border-radius: 10px 10px 10px 10px; 
+            -webkit-border-radius: 10px 10px 10px 10px; 
+            border: 2px solid #292929;}
