@@ -5,9 +5,14 @@
     background-color: green;
     border-radius: 150px;
     width: 50px;}
-    .caja { 
-        font-family: sans-serif; 
-        font-size: 18px; 
-        font-weight: 400; 
-        color: #ffffff; 
-        background:#ee0467 }
+
+.caja {
+        font-family: Impact;
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        background: #414141;
+        margin: 0 0 25px;
+        overflow: hidden;
+        padding: 20px;
+        }
