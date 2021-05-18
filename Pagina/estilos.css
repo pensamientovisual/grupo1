@@ -2,22 +2,31 @@
 .foto1 { padding: 10px; margin: 10px; float: left; width: 100px; }
 
 .foto2 {  
-    background-color: green;
-    border-radius: 150px;
-    width: 50px;}
+    background-color: #292929;
+    border-radius: 10px;
+    }
 
 
 .caja { 
             font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
             color: #ffffff; 
-            font-size: 18px; 
-            font-weight: 400; 
-            text-align: center; 
-            background: #4d4d4d;
-            margin: 0 0 25px; 
+            font-size: 14px; 
+            font-weight: 0; 
+            text-align: justify; 
+            background: #292929;
+            margin: 0 0 0px; 
             overflow: hidden; 
-            padding: 20px; 
-            border-radius: 10px 10px 10px 10px; 
-            -moz-border-radius: 10px 10px 10px 10px; 
-            -webkit-border-radius: 10px 10px 10px 10px; 
-            border: 2px solid #292929;}
+            padding: 50px; 
+            border-radius: 5px 5px 5px 5px; 
+            -moz-border-radius: 5px 5px 5px 5px; 
+            -webkit-border-radius: 5px 5px 5px 5px; 
+            float: right;
+            height: 200px;
+            width: 300px;
+            border: 2px solid #292929;
+            vertical-align: 1000px;}
+
+    
+
+.centro{
+    display: inline-block;}
