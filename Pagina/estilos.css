@@ -4,11 +4,11 @@
     margin: 0px; 
     border: 0px solid black; 
     float: right; 
-    width: 250px;
-    margin-top: 10px; }
+    width: 200px;
+    margin-top: 10px; 
+    text-align: center;}
 
 .foto2 {  
-    background: green}
+    background-color: green;
+border-radius: 10px;}
 
-.texto {
-    background: green}
