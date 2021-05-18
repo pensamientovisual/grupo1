@@ -3,5 +3,11 @@
 
 .foto2 {  
     background-color: green;
-    border-radius: 150px;}
-
+    border-radius: 150px;
+    width: 50px;}
+    .caja { 
+        font-family: sans-serif; 
+        font-size: 18px; 
+        font-weight: 400; 
+        color: #ffffff; 
+        background:#ee0467 }
