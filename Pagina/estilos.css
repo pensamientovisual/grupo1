@@ -7,9 +7,8 @@
     width: 250px;
     margin-top: 10px; }
 
-.foto2 { 
-    padding-top: 2000px; 
-    margin: 0px; 
-    border: 0px solid black; 
-    float: left; 
-    margin-top: 1000px; }
+.foto2 {  
+    background: green}
+
+.texto {
+    background: green}
