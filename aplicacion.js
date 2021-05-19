@@ -3,12 +3,12 @@ $(document).ready(function(){
   
     region.mouseenter(function(){
       var titleComuna = $(this).attr("title");
-      $("#titulo").text(titleComuna);
+      $("#nombre").text(titleComuna);
       $(this).css('fill', '#689f38');
     });
   
     region.mouseleave(function(){
-      $("#titulo").text("Región");
+      $("#nombre").text("Región");
       $(this).css('fill', '#aaa7a7');
     })
   

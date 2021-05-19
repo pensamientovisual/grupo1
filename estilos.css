@@ -73,10 +73,17 @@
     fill:#aaa7a7;
 }
 
-#titulo{
+#nombre{
     color: #689f38;
     font-size:40px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
+#titulo{
+    color: #ffffff;
+    font-size:50px;
+    background-color: #689f38;
+    padding: 50px;
+    text-align: center;
+}
