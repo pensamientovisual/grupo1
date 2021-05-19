@@ -19,10 +19,12 @@ $(document).ready(function(){
   
   logo.mouseenter(function(){
     $(this).css('background-color', '#689f38');
+    $(this).css('fill', '#292929');
   });
   
   logo.mouseleave(function(){
-    $(this).css('background-color', '#292929')
+    $(this).css('background-color', '#292929');
+    $(this).css('fill', '#689f38')
   })
   
 });
