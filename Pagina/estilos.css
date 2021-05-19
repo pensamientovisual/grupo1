@@ -1,9 +1,18 @@
 
-.foto1 { padding: 10px; margin: 10px; float: left; width: 100px; }
+.foto1 { 
+    padding: 10px; 
+    margin: 10px; 
+    float: left; 
+    width: 100px; 
+}
 
 .foto2 {  
-    background-color: #292929;
-    border-radius: 10px;
+    background-color:#292929;
+    border-radius: 100px;
+    height: 75px;
+    width: 75px;
+    margin-left: 100px;
+    float: center;
     }
 
 
@@ -30,3 +39,24 @@
 
 .centro{
     display: inline-block;}
+
+.cuadro{
+    background-color: #aaa7a7;
+    height: 20px;
+    margin-left: 75px;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.region{
+    fill:#aaa7a7;
+}
+
+#titulo{
+    color: #689f38;
+    font-size:25px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
