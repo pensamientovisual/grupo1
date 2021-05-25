@@ -95,3 +95,25 @@
     padding: 50px;
     text-align: center;
 }
+
+#info{
+    display: none;
+    color: #ffffff; 
+            font-size: 14px; 
+            font-weight: 0; 
+            text-align: justify; 
+            background: #292929;
+            margin-right: 100px; 
+            overflow: hidden; 
+            padding: 15px; 
+            border-radius: 5px 5px 5px 5px; 
+            -moz-border-radius: 5px 5px 5px 5px; 
+            -webkit-border-radius: 5px 5px 5px 5px; 
+            float: right;
+            width: 300px;
+            border: 2px solid #292929;
+            vertical-align: 1000px;
+            position: relative;
+            bottom: 400px;
+            height: 200px;}
+

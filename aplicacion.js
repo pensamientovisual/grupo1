@@ -26,6 +26,10 @@ $(document).ready(function(){
     $(this).css('background-color', '#292929');
     $(this).css('fill', '#689f38')
   })
+
+  logo.click(function(){
+    $("#info").show();
+  });
   
 });
 
