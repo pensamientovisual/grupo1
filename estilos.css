@@ -1,5 +1,8 @@
 *{
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .foto1 { 
@@ -48,6 +51,7 @@
     height: 20px;
     margin-left: 100px;
     margin-right: 30px;
+    margin-bottom: 10px;
     border-radius: 5px 5px 5px 5px; 
             -moz-border-radius: 5px 5px 5px 5px; 
             -webkit-border-radius: 5px 5px 5px 5px; 
@@ -55,6 +59,7 @@
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
+    color: #292929;
 }
 
 #eolica{
@@ -71,6 +76,9 @@
 
 .region{
     fill:#aaa7a7;
+    text-align: right;
+    stroke: #ffffff;
+    stroke-width: 1px;
 }
 
 #nombre{
