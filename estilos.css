@@ -2,7 +2,7 @@
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: git;
 }
 
 .foto1 { 
@@ -11,14 +11,17 @@
     float: left; 
     width: 150px; 
 }
-
+.energia{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: inline-block;
+    margin-top: 10px;
+}
 .foto2 {  
     background-color:#292929;
     border-radius: 100px;
     height: 75px;
     width: 75px;
-    margin-left: 100px;
-    margin-right: 10px;
     float: center;
     fill: #689f38;
     }
@@ -43,26 +46,22 @@
 
     
 
-.centro{
-    display: inline-block;}
+
 
 .cuadro{
     background-color: #aaa7a7;
     height: 20px;
-    margin-left: 100px;
-    margin-right: 30px;
-    margin-bottom: 10px;
     border-radius: 5px 5px 5px 5px; 
             -moz-border-radius: 5px 5px 5px 5px; 
             -webkit-border-radius: 5px 5px 5px 5px; 
-    display: inline-block;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
     color: #292929;
+    text-align: center;
 }
 
-#eolica{
+/*#eolica{
     margin-left: 125px;
 }
 
@@ -73,7 +72,7 @@
 #hidro{
     margin-left: 70px;
 }
-
+*/
 .region{
     fill:#aaa7a7;
     text-align: right;
@@ -86,14 +85,33 @@
     font-size:40px;
     margin-left: 10px;
     margin-top: 10px;
+    background-color: #292929;
+    border-radius: 5px 5px 5px 5px; 
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding: 10px; 
+    margin: 10px; 
+    text-align: center;
 }
-
-#titulo{
+.titulo{
     color: #ffffff;
-    font-size:50px;
     background-color: #689f38;
     padding: 50px;
     text-align: center;
+    display: inline-block; 
+    margin-bottom: 100px;
+    position: static;
+    border-radius: 0px 0px 5px 5px; 
+}
+
+#titulo{
+    font-size:50px;
+    font-family: 'Farro', sans-serif;
+}
+
+#bajada{
+    font-size:20px
 }
 
 #info{
@@ -107,13 +125,4 @@
             overflow: hidden; 
             padding: 15px; 
             border-radius: 5px 5px 5px 5px; 
-            -moz-border-radius: 5px 5px 5px 5px; 
-            -webkit-border-radius: 5px 5px 5px 5px; 
-            float: right;
-            width: 300px;
-            border: 2px solid #292929;
-            vertical-align: 1000px;
-            position: relative;
-            bottom: 400px;
-            height: 200px;}
-
+    }
