@@ -15,7 +15,6 @@
     margin-left: 100px;
     margin-right: 100px;
     display: inline-block;
-    margin-top: 10px;
 }
 .foto2 {  
     background-color:#292929;
@@ -44,10 +43,6 @@
             border: 2px solid #292929;
             vertical-align: 1000px;}
 
-    
-
-
-
 .cuadro{
     background-color: #aaa7a7;
     height: 20px;
@@ -59,6 +54,7 @@
     padding-top: 5px;
     color: #292929;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 /*#eolica{
@@ -100,7 +96,7 @@
     padding: 50px;
     text-align: center;
     display: inline-block; 
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     position: static;
     border-radius: 0px 0px 5px 5px; 
 }
@@ -117,12 +113,23 @@
 #info{
     display: none;
     color: #ffffff; 
-            font-size: 14px; 
-            font-weight: 0; 
-            text-align: justify; 
-            background: #292929;
-            margin-right: 100px; 
-            overflow: hidden; 
-            padding: 15px; 
-            border-radius: 5px 5px 5px 5px; 
+    font-size: 14px; 
+    font-weight: 0; 
+    text-align: justify; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: right; 
     }
+
+#resumen{
+    display: none;
+    position: absolute;
+    background-color: #689f38;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+}
+
