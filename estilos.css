@@ -4,16 +4,20 @@
     margin-left: 0px;
     margin-right: git;
 }
+#pagina{
+    margin: 0px;
+    width: 1250px;
+}
 
 .foto1 { 
     padding: 10px; 
     margin: 10px; 
     float: left; 
-    width: 150px; 
+    width: 15%; 
 }
 .energia{
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 15%;
     display: inline-block;
 }
 .foto2 {  
@@ -25,13 +29,31 @@
     fill: #689f38;
     }
 
+.foto3 {  
+        background-color:#292929;
+        border-radius: 100px;
+        height: 75px;
+        width: 75px;
+        float: center;
+        fill: #689f38;
+        }
+
+.foto4 {  
+            background-color:#292929;
+            border-radius: 100px;
+            height: 75px;
+            width: 75px;
+            float: center;
+            fill: #689f38;
+            }
+
 
 .caja { 
             color: #ffffff; 
             font-size: 14px; 
             font-weight: 0; 
             background: #292929;
-            margin-right: 100px; 
+            margin-right: 50px; 
             overflow: hidden; 
             padding: 15px; 
             border-radius: 5px 5px 5px 5px; 
@@ -75,6 +97,15 @@
     stroke-width: 1px;
 }
 
+.cerrar{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 10px;
+}
+
 #nombre{
     color: #689f38;
     font-size:40px;
@@ -92,7 +123,7 @@
 .titulo{
     color: #ffffff;
     background-color: #689f38;
-    padding: 50px;
+    padding: 3% 11%;
     text-align: center;
     display: inline-block; 
     margin-bottom: 75px;
@@ -109,7 +140,7 @@
     font-size:20px
 }
 
-#info{
+#info1{
     display: none;
     color: #ffffff; 
     font-size: 14px; 
@@ -121,6 +152,35 @@
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
     float: right; 
+    }
+
+#info2{
+        display: none;
+        color: #ffffff; 
+        font-size: 14px; 
+        font-weight: 0; 
+        text-align: justify; 
+        background: #292929;
+        margin-right: 100px; 
+        overflow: hidden; 
+        padding: 15px; 
+        border-radius: 5px 5px 5px 5px;
+        float: right; 
+        }
+
+#info3{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    text-align: justify; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: right; 
+    width: 300px;
     }
 
 #resumen{
