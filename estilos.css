@@ -130,5 +130,20 @@
     border-radius: 5px;
     padding: 5px;
     color: #ffffff;
+    list-style-position: inside;
+    
 }
 
+#resumen_solar{
+    display: inline-block;
+    line-height: 25px;
+}
+
+#resumen_eolica{
+    display: inline-block;
+}
+
+#resumen_hidro{
+    line-height: 25px;
+    display: inline-block;
+}
