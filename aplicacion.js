@@ -1,3 +1,23 @@
+// Definimos una variable que contendrá nuestra base de datos.
+let db; 
+
+// Cargamos nuestra base de datos con PapaParse indicando su dirección.
+Papa.parse("info-energias-general.csv", {
+    download: true,  // Indicamos que es un archivo que existe en nuestro servidor y se debe descargar.
+    header: true,    // Indicamos que la primera fila corresponde al nombre de cada columna.
+    complete: function(results) {
+        /*
+        Una vez que se haya completado la descarga de nuestro archivo asignamos la variable a los datos obtenidos. 
+        Ojo que esto no ocurriá de inmediato, por lo que si intentas usar "db" antes de que pase esto será una variable nula.
+        Esto corresponderá a una lista de n elementos, dónde n corresponde al número de filas en la base de datos.
+        Por ejemplo, podemos aceder a la columna "1960" en la i-ésima fila con db[i-1]["1960"];
+        */
+        db = results.data; 
+	}
+});
+
+
+
 $(document).ready(function(){
     var region = $(".region");
   
@@ -37,47 +57,5 @@ $(document).ready(function(){
   
 });
 
-$.ajax({
-  url: 'info-energias-general.csv',
-  dataType: 'text',
-}).done(successFunction);
-
-function successFunction(data) {
-  var allRows = data.split(/r?n|r/);
-  var table = '<table>';
-  for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
-    if (singleRow === 0) {
-      table += '<thead>';
-      table += '<tr>';
-    } else {
-      table += '<tr>';
-    }
-    var rowCells = allRows[singleRow].split(',');
-    for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
-      if (singleRow === 0) {
-        table += '<th>';
-        table += rowCells[rowCell];
-        table += '</th>';
-      } else {
-        table += '<td>';
-        table += rowCells[rowCell];
-        table += '</td>';
-      }
-    }
-    if (singleRow === 0) {
-      table += '</tr>';
-      table += '</thead>';
-      table += '<tbody>';
-    } else {
-      table += '</tr>';
-    }
-  } 
-  table += '</tbody>';
-  table += '</table>';
-  $('body').append(table);
-}
-
-
- 
 
  
