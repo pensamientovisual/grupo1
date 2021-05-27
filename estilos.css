@@ -90,6 +90,10 @@
     margin-left: 70px;
 }
 */
+#mapa{
+    left: 10px;
+}
+
 .region{
     fill:#aaa7a7;
     text-align: right;
@@ -151,7 +155,8 @@
     overflow: hidden; 
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
-    float: right; 
+    float: left; 
+    margin-left: 10px;
     }
 
 #info2{
@@ -165,7 +170,8 @@
         overflow: hidden; 
         padding: 15px; 
         border-radius: 5px 5px 5px 5px;
-        float: right; 
+        float: left;
+        margin-left: 10px; 
         }
 
 #info3{
@@ -179,8 +185,9 @@
     overflow: hidden; 
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
-    float: right; 
+    float: left; 
     width: 300px;
+    margin-left: 10px;
     }
 
 #resumen{
