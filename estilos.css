@@ -92,6 +92,8 @@
 */
 #mapa{
     left: 10px;
+    margin-left: 377px;
+    position: absolute;
 }
 
 .region{
@@ -99,6 +101,7 @@
     text-align: right;
     stroke: #ffffff;
     stroke-width: 1px;
+    
 }
 
 .cerrar{ 
