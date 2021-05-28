@@ -53,7 +53,7 @@
             font-size: 14px; 
             font-weight: 0; 
             background: #292929;
-            margin-right: 50px; 
+            margin-right: 12px; 
             overflow: hidden; 
             padding: 15px; 
             border-radius: 5px 5px 5px 5px; 
@@ -76,6 +76,11 @@
     color: #292929;
     text-align: center;
     margin-bottom: 10px;
+}
+
+.fotobomba{
+    height: 300px;
+
 }
 
 /*#eolica{
@@ -159,22 +164,24 @@
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
     float: left; 
+    width: 300px;
     margin-left: 10px;
     }
 
 #info2{
-        display: none;
-        color: #ffffff; 
-        font-size: 14px; 
-        font-weight: 0; 
-        text-align: justify; 
-        background: #292929;
-        margin-right: 100px; 
-        overflow: hidden; 
-        padding: 15px; 
-        border-radius: 5px 5px 5px 5px;
-        float: left;
-        margin-left: 10px; 
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    text-align: justify; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 300px;
+    margin-left: 10px;
         }
 
 #info3{
