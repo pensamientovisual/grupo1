@@ -11,9 +11,11 @@
 
 .foto1 { 
     padding: 10px; 
-    margin: 10px; 
     float: left; 
     width: 15%; 
+    margin-top: 3px;
+    margin-left: 20px;
+    margin-right: 50px;
 }
 .energia{
     margin-left: 10%;
@@ -48,13 +50,12 @@
             }
 
 
-.caja { 
+#caja { 
             color: #ffffff; 
             font-size: 14px; 
             font-weight: 0; 
             background: #292929;
             margin-right: 12px; 
-            overflow: hidden; 
             padding: 15px; 
             border-radius: 5px 5px 5px 5px; 
             -moz-border-radius: 5px 5px 5px 5px; 
@@ -62,7 +63,21 @@
             float: right;
             width: 300px;
             border: 2px solid #292929;
-            vertical-align: 1000px;}
+            vertical-align: 1000px;
+        }
+
+.abrir {
+    height: 30px;
+    float:right;
+    fill: #689f38;
+    margin-right: 12px;
+    background-color:#292929;
+    padding: 2px;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden; 
+
+}
 
 .cuadro{
     background-color: #aaa7a7;
@@ -99,6 +114,7 @@
     left: 10px;
     margin-left: 377px;
     position: absolute;
+    
 }
 
 .region{
@@ -115,8 +131,17 @@
     fill:#292929;
     padding: 2px;
     background-color: #689f38;
-    border-radius: 10px;
+    border-radius: 5px;
 }
+.cerrard{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 5px;
+}
+
 
 #nombre{
     color: #689f38;
@@ -135,12 +160,13 @@
 .titulo{
     color: #ffffff;
     background-color: #689f38;
-    padding: 3% 11%;
+    padding: 1% 1%;
     text-align: center;
-    display: inline-block; 
-    margin-bottom: 75px;
+    display: inline-block;
+    margin-bottom: 68px;
     position: static;
-    border-radius: 0px 0px 5px 5px; 
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 10px;
 }
 
 #titulo{
@@ -208,6 +234,7 @@
     padding: 5px;
     color: #ffffff;
     list-style-position: inside;
+    z-index: 1000;
     
 }
 
@@ -224,3 +251,16 @@
     line-height: 25px;
     display: inline-block;
 }
+
+
+cajapequena { 
+    display: none;
+    background: #292929;
+    margin-right: 12px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: right; 
+    width: 20px;
+    vertical-align: 1000px;
+        }

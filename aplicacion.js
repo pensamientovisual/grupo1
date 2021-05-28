@@ -175,4 +175,42 @@ $(document).ready(function(){
   });
   
 });
- 
+
+$(document).ready(function(){
+  var x = $(".cerrard");
+  
+  x.mouseenter(function(){
+    $(this).css('fill', '#ffffff');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('fill', '#292929');
+  });
+
+  x.click(function(){
+    $("#caja").hide();
+    $(".abrir").show();
+  });
+  
+});
+
+$(document).ready(function(){
+  var x = $(".abrir");
+  
+  x.mouseenter(function(){
+    $(this).css('background-color', '#689f38');
+    $(this).css('fill', '#292929');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('background-color', '#292929');
+    $(this).css('fill', '#689f38');
+  })
+
+  x.click(function(){
+    $("#caja").show();
+    $(".abrir").hide();
+  });
+  
+});
+
