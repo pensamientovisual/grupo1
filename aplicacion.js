@@ -223,3 +223,30 @@ $(document).ready(function(){
   });
   
 });
+$(document).ready(function(){
+  var x = $(".region");
+  
+
+  x.click(function(){
+    $("#porregion").show();
+ 
+  });
+  
+});
+
+$(document).ready(function(){
+  var x = $(".cerrart");
+  
+  x.mouseenter(function(){
+    $(this).css('fill', '#ffffff');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('fill', '#292929');
+  });
+
+  x.click(function(){
+    $("#porregion").hide();
+  });
+  
+});

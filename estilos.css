@@ -63,7 +63,7 @@
             -moz-border-radius: 5px 5px 5px 5px; 
             -webkit-border-radius: 5px 5px 5px 5px; 
             float: right;
-            width: 300px;
+            width: 500px;
             border: 2px solid #292929;
             vertical-align: 1000px;
         }
@@ -136,6 +136,15 @@
     border-radius: 5px;
 }
 .cerrard{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 5px;
+}
+
+.cerrart{ 
     height: 20px;
     float:right;
     fill:#292929;
@@ -269,7 +278,30 @@ img.foto1 {
     transform: scale(1.2);
 }
 
-.region{cursor:url(curs.svg), auto;}
+.region{cursor:url(curs.svg), auto;
+
+}
+
+
+#porregion{
+color: #ffffff; 
+            font-size: 14px; 
+            font-weight: 0; 
+            background: #292929;
+            margin-right: 0px; 
+            margin-left: 795px;
+            margin-top: 165px;
+            padding: 15px; 
+            border-radius: 5px 5px 5px 5px; 
+            -moz-border-radius: 5px 5px 5px 5px; 
+            -webkit-border-radius: 5px 5px 5px 5px; 
+            float: center;
+            width: 500px;
+            border: 2px solid #292929;
+            overflow: hidden; 
+            display: none;
+            z-index: 10000000;
+        }
 
 cajapequena { 
     display: none;
