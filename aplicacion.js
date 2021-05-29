@@ -214,3 +214,12 @@ $(document).ready(function(){
   
 });
 
+
+$(document).ready(function(){
+  $('.foto1').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  
+});

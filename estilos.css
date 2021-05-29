@@ -7,6 +7,7 @@
 #pagina{
     margin: 0px;
     width: 1250px;
+    margin-left: 91px;
 }
 
 .foto1 { 
@@ -16,6 +17,7 @@
     margin-top: 3px;
     margin-left: 20px;
     margin-right: 50px;
+    
 }
 .energia{
     margin-left: 10%;
@@ -112,7 +114,7 @@
 */
 #mapa{
     left: 10px;
-    margin-left: 377px;
+    margin-left: 490px;
     position: absolute;
     
 }
@@ -252,6 +254,22 @@
     display: inline-block;
 }
 
+img.foto1 {
+    width: 200px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.region{cursor:url(curs.svg), auto;}
 
 cajapequena { 
     display: none;
