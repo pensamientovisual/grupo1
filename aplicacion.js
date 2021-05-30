@@ -40,7 +40,7 @@ $(document).ready(function(){
     region.mouseenter(function(){
       var titleComuna = $(this).attr("title");
       $("#nombre").text(titleComuna);
-      $(this).css('fill', '#689f38');
+      $(this).fadeTo("fast", 0.5);
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",")
       $("#resumen_solar").text(listadata[0]);
@@ -56,10 +56,14 @@ $(document).ready(function(){
       $("#resumen_solar").text("");
       $("#resumen_eolica").text("");
       $("#resumen_hidro").text("");
-      $(this).css('fill', '#aaa7a7');
+      $(this).fadeTo("fast", 1);
       $("#resumen").css('display','none');
+    });
+
+    region.click(function(){
+      $("#porregion").show();
     })
-  
+
   });
 
 $(document).ready(function(){
@@ -79,6 +83,19 @@ $(document).ready(function(){
     $("#info1").show();
     $("#info3").hide();
     $("#info2").hide();
+    $("#parametro1").show();
+    $(".region").each(function(){
+      var dataRegion = $(this).attr("data");
+      var listadata = dataRegion.split(",");
+      var sol = parseFloat(listadata[0]);
+      if (sol<=4.21666666){
+        $(this).css('fill', '#c5e2ac');
+      }else if (sol<=5.6033333 && sol>4.21666666){
+        $(this).css('fill', '#689f38');
+      }else if (sol<=6.99 && sol>5.6033333){
+        $(this).css('fill', '#406222');
+      };
+    }); 
   });
   
 });
@@ -100,6 +117,18 @@ $(document).ready(function(){
     $("#info2").show();
     $("#info1").hide();
     $("#info3").hide();
+    $(".region").each(function(){
+      var dataRegion = $(this).attr("data");
+      var listadata = dataRegion.split(",");
+      var sol = parseFloat(listadata[1]);
+      if (sol<=6.133333){
+        $(this).css('fill', '#c5e2ac');
+      }else if (sol<=8.16666667 && sol>6.133333){
+        $(this).css('fill', '#689f38');
+      }else if (sol<=10.2 && sol>8.16666667){
+        $(this).css('fill', '#406222');
+      };
+    });
   });
   
 });
@@ -121,6 +150,18 @@ $(document).ready(function(){
     $("#info3").show();
     $("#info2").hide();
     $("#info1").hide();
+    $(".region").each(function(){
+      var dataRegion = $(this).attr("data");
+      var listadata = dataRegion.split(",");
+      var sol = parseFloat(listadata[2]);
+      if (sol<=3961.1){
+        $(this).css('fill', '#c5e2ac');
+      }else if (sol<=7922.2 && sol>3961.1){
+        $(this).css('fill', '#689f38');
+      }else if (sol<=11883.3 && sol>7922.2){
+        $(this).css('fill', '#406222');
+      };
+    }); 
   });
   
 });
@@ -138,43 +179,15 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#info3").hide();
-  });
-  
-});
-
-$(document).ready(function(){
-  var x = $(".cerrar");
-  
-  x.mouseenter(function(){
-    $(this).css('fill', '#fffff');
-  });
-  
-  x.mouseleave(function(){
-    $(this).css('fill', '#292929');
-  });
-
-  x.click(function(){
-    $("#info1").hide();
-  });
-  
-});
-
-$(document).ready(function(){
-  var x = $(".cerrar");
-  
-  x.mouseenter(function(){
-    $(this).css('fill', "#fffff");
-  });
-  
-  x.mouseleave(function(){
-    $(this).css('fill', '#292929');
-  });
-
-  x.click(function(){
     $("#info2").hide();
+    $("#info1").hide();
+    $(".region").each(function(){
+      $(this).css('fill', '#aaa7a7');
+      });
   });
   
 });
+
 
 $(document).ready(function(){
   var x = $(".cerrard");
@@ -223,16 +236,6 @@ $(document).ready(function(){
   });
   
 });
-$(document).ready(function(){
-  var x = $(".region");
-  
-
-  x.click(function(){
-    $("#porregion").show();
- 
-  });
-  
-});
 
 $(document).ready(function(){
   var x = $(".cerrart");
@@ -247,6 +250,23 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#porregion").hide();
+  });
+  
+});
+
+$(document).ready(function(){
+  var x = $(".cerrar_parametro");
+  
+  x.mouseenter(function(){
+    $(this).css('fill', '#ffffff');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('fill', '#292929');
+  });
+
+  x.click(function(){
+    $("#parametro1").hide();
   });
   
 });

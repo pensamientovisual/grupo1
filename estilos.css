@@ -63,7 +63,7 @@
             -moz-border-radius: 5px 5px 5px 5px; 
             -webkit-border-radius: 5px 5px 5px 5px; 
             float: right;
-            width: 500px;
+            width: 400px;
             border: 2px solid #292929;
             vertical-align: 1000px;
         }
@@ -100,18 +100,6 @@
 
 }
 
-/*#eolica{
-    margin-left: 125px;
-}
-
-#foto{
-    margin-left: 75px;
-}
-
-#hidro{
-    margin-left: 70px;
-}
-*/
 #mapa{
     left: 10px;
     margin-left: 490px;
@@ -122,7 +110,7 @@
 .region{
     fill:#aaa7a7;
     text-align: right;
-    stroke: #ffffff;
+    stroke: #292929;
     stroke-width: 1px;
     
 }
@@ -314,3 +302,30 @@ cajapequena {
     width: 20px;
     vertical-align: 1000px;
         }
+
+
+#parametro1{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 12px; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px; 
+        -moz-border-radius: 5px 5px 5px 5px; 
+        -webkit-border-radius: 5px 5px 5px 5px; 
+    float: right;
+    width: 225px;
+    border: 2px solid #292929;
+    vertical-align: 1000px;
+}
+        
+.cerrar_parametro{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 5px;
+}
