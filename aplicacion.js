@@ -1,38 +1,3 @@
-/* Definimos una variable que contendrá nuestra base de datos.
-let db; 
-
-// Cargamos nuestra base de datos con PapaParse indicando su dirección.
-Papa.parse("info-energias-general.csv", {
-    download: true, // Indicamos que es un archivo que existe en nuestro servidor y se debe descargar.
-    header: true,  // Indicamos que la primera fila corresponde al nombre de cada columna.
-    complete: function(results) {
-        db = results.data; 
-        crear_lista();
-	}
-});
-
-
-function crear_lista() {
-  d3.select("body").append("label").text("Elige un país: ");
-  let select = document.createElement("select");
-  for (var fila = 0; fila < db.length; fila++) {
-      var option = document.createElement("option"); 
-      option.text = db[fila]["Region"];
-      option.value = fila;
-      select.appendChild(option);
-  }
-  select.onchange = mostrarDatosPais;
-  document.body.appendChild(select);
-}
-
-function mostrarDatosPais()
-{
-    d3.selectAll("#resumen").remove()
-    let fila = event2.target.value;
-    for (let [columna, valor] of Object.entries(db[fila])) 
-        d3.select("body").append("p").text(columna + ": " + valor);
-}
-*/
 
 $(document).ready(function(){
     var region = $(".region");
@@ -62,6 +27,7 @@ $(document).ready(function(){
 
     region.click(function(){
       $("#porregion").show();
+      $("#parametro1").css('margin-top', '8px');
     })
 
   });
@@ -117,6 +83,7 @@ $(document).ready(function(){
     $("#info2").show();
     $("#info1").hide();
     $("#info3").hide();
+    $("#parametro1").show();
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -150,6 +117,7 @@ $(document).ready(function(){
     $("#info3").show();
     $("#info2").hide();
     $("#info1").hide();
+    $("#parametro1").show();
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -184,6 +152,7 @@ $(document).ready(function(){
     $(".region").each(function(){
       $(this).css('fill', '#aaa7a7');
       });
+    $("#parametro1").hide();
   });
   
 });
@@ -250,6 +219,7 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#porregion").hide();
+    $("#parametro1").css('margin-top', '200px');
   });
   
 });

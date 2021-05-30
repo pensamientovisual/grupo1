@@ -159,7 +159,7 @@
 .titulo{
     color: #ffffff;
     background-color: #689f38;
-    padding: 1% 1%;
+    padding: 2% 2%;
     text-align: center;
     display: inline-block;
     margin-bottom: 68px;
@@ -278,7 +278,7 @@ color: #ffffff;
             background: #292929;
             margin-right: 0px; 
             margin-left: 795px;
-            margin-top: 165px;
+            margin-top: 200px;
             padding: 15px; 
             border-radius: 5px 5px 5px 5px; 
             -moz-border-radius: 5px 5px 5px 5px; 
@@ -305,20 +305,23 @@ cajapequena {
 
 
 #parametro1{
-    display: none;
     color: #ffffff; 
     font-size: 14px; 
     font-weight: 0; 
     background: #292929;
-    margin-right: 12px; 
+    margin-right: 0px; 
+    margin-left: 895px;
+    margin-top: 200px;
     padding: 15px; 
     border-radius: 5px 5px 5px 5px; 
         -moz-border-radius: 5px 5px 5px 5px; 
         -webkit-border-radius: 5px 5px 5px 5px; 
-    float: right;
-    width: 225px;
+    float: center;
+    width: 250px;
     border: 2px solid #292929;
-    vertical-align: 1000px;
+    overflow: hidden; 
+    display: none;
+    z-index: 10000000;
 }
         
 .cerrar_parametro{ 
@@ -328,4 +331,28 @@ cajapequena {
     padding: 2px;
     background-color: #689f38;
     border-radius: 5px;
+}
+
+.rango1{
+    background-color: #c5e2ac;
+    border-radius: 50px;
+    display: inline-block;
+    width: 18px;
+    color: #c5e2ac;
+}
+
+.rango2{
+    background-color: #689f38;
+    border-radius: 50px;
+    display: inline-block;
+    width: 18px;
+    color: #689f38;
+}
+
+.rango3{
+    background-color: #406222;
+    border-radius: 50px;
+    display: inline-block;
+    width: 18px;
+    color: #406222;
 }
