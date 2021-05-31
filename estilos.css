@@ -201,9 +201,9 @@
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
     float: left; 
-    width: 300px;
+    width: 450px;
     margin-left: 10px;
-        }
+}
 
 #info3{
     display: none;
@@ -217,7 +217,7 @@
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
     float: left; 
-    width: 300px;
+    width: 450px;
     margin-left: 10px;
     }
 
@@ -229,8 +229,7 @@
     padding: 5px;
     color: #ffffff;
     list-style-position: inside;
-    z-index: 1000;
-    
+    z-index: 100000;
 }
 
 #resumen_solar{
@@ -280,7 +279,8 @@ img.foto1 {
     border: 2px solid #292929;
     overflow: hidden; 
     display: none;
-    z-index: 10000000;
+    z-index: 1000;
+    position: absolute;
 }
 
 cajapequena{ 
@@ -313,7 +313,8 @@ cajapequena{
     border: 2px solid #292929;
     overflow: hidden; 
     display: none;
-    z-index: 10000000;
+    z-index: 1000;
+    position: absolute;
 }
         
 .cerrar_parametro{ 
@@ -365,7 +366,7 @@ cajapequena{
 
 .subenergia{
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 img.fotovoltaica{
@@ -412,4 +413,126 @@ img.termosolares{
     float: left; 
     width: 450px;
     margin-left: 10px;
+}
+
+/*flecha solar>termo */
+.flechita{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+/*flecha solar>foto */
+.flechita2{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+.flechita3{ 
+    height: 20px;
+    float:right;
+    fill:#292929;
+    padding: 2px;
+    background-color: #689f38;
+    border-radius: 5px;
+    margin-right: 3px;
+}
+
+img.horizontal{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+img.vertical{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+#info2_horizontal{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;    
+}
+
+#info2_vertical{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;    
+}
+
+#info3_embalse{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;    
+}
+
+#info3_pasada{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;    
+}
+
+#info3_bombeo{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;    
 }

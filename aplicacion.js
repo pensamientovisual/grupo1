@@ -1,4 +1,7 @@
 
+
+
+
 $(document).ready(function(){
     var region = $(".region");
   
@@ -27,7 +30,7 @@ $(document).ready(function(){
 
     region.click(function(){
       $("#porregion").show();
-      $("#parametro1").css('margin-top', '8px');
+      $("#parametro1").css('margin-top', '360px');
     })
 
   });
@@ -49,10 +52,17 @@ $(document).ready(function(){
     $("#info1").show();
     $("#info3").hide();
     $("#info2").hide();
+    $("#info1_termo").hide();
+    $("#info1_foto").hide();
+    $("#info2_horizontal").hide();
+    $("#info2_vertical").hide();
+    $("#info3_embalse").hide();
+    $("#info3_pasada").hide();
+    $("#info3_bombeo").hide();
     $("#parametro1").show();
-    $("#num1").text("([5.6033333-6.99])");
-    $("#num2").text("([4.21666666 - 5.6033333])");
-    $("#num3").text("([2.83 - 4.21666666])");
+    $("#num1").text("([5.603-6.99])");
+    $("#num2").text("([4.216 - 5.603])");
+    $("#num3").text("([2.83 - 4.216])");
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -88,10 +98,15 @@ $(document).ready(function(){
     $("#info3").hide();
     $("#info1_termo").hide();
     $("#info1_foto").hide();
+    $("#info2_horizontal").hide();
+    $("#info2_vertical").hide();
+    $("#info3_embalse").hide();
+    $("#info3_pasada").hide();
+    $("#info3_bombeo").hide();
     $("#parametro1").show();
-    $("#num1").text("([8.16666667 - 10.2])");
-    $("#num2").text("([6.133333 - 8.16666667])");
-    $("#num3").text("([4.1 - 6.133333])");
+    $("#num1").text("([8.16 - 10.2])");
+    $("#num2").text("([6.13 - 8.16])");
+    $("#num3").text("([4.1 - 6.13])");
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -127,6 +142,11 @@ $(document).ready(function(){
     $("#info1").hide();
     $("#info1_termo").hide();
     $("#info1_foto").hide();
+    $("#info2_horizontal").hide();
+    $("#info2_vertical").hide();
+    $("#info3_embalse").hide();
+    $("#info3_pasada").hide();
+    $("#info3_bombeo").hide();
     $("#parametro1").show();
     $("#num1").text("([7922.2 - 11883.3])");
     $("#num2").text("([3961.1 - 7922.2])");
@@ -162,14 +182,18 @@ $(document).ready(function(){
     $("#info3").hide();
     $("#info2").hide();
     $("#info1").hide();
-    $("#info1_foto").hide();
     $("#info1_termo").hide();
+    $("#info1_foto").hide();
+    $("#info2_horizontal").hide();
+    $("#info2_vertical").hide();
+    $("#info3_embalse").hide();
+    $("#info3_pasada").hide();
+    $("#info3_bombeo").hide();
     $(".region").each(function(){
       $(this).css('fill', '#aaa7a7');
       });
     $("#parametro1").hide();
   });
-  
 });
 
 
@@ -221,6 +245,8 @@ $(document).ready(function(){
   
 });
 
+
+
 $(document).ready(function(){
   $('.fotovoltaica').hover(function() {
       $(this).addClass('transition');
@@ -246,6 +272,66 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $('.horizontal').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.horizontal').click(function(){
+    $("#info2").hide();
+    $("#info2_horizontal").show();
+  });
+});
+
+$(document).ready(function(){
+  $('.vertical').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.vertical').click(function(){
+    $("#info2").hide();
+    $("#info2_vertical").show();
+  });
+});
+
+$(document).ready(function(){
+  $('.embalse').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.embalse').click(function(){
+    $("#info3").hide();
+    $("#info3_embalse").show();
+  });
+});
+
+$(document).ready(function(){
+  $('.pasada').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.pasada').click(function(){
+    $("#info3").hide();
+    $("#info3_pasada").show();
+  });
+});
+
+$(document).ready(function(){
+  $('.bombeo').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.bombeo').click(function(){
+    $("#info3").hide();
+    $("#info3_bombeo").show();
+  });
+});
+
+$(document).ready(function(){
   var x = $(".cerrart");
   
   x.mouseenter(function(){
@@ -259,6 +345,8 @@ $(document).ready(function(){
   x.click(function(){
     $("#porregion").hide();
     $("#parametro1").css('margin-top', '200px');
+    $(this).fadeTo("fast", 1);
+    $("#nombre").text("Seleccione una Región");
   });
   
 });
@@ -279,3 +367,61 @@ $(document).ready(function(){
   });
   
 });
+
+$(document).ready(function(){
+  var x = $(".flechita");
+  
+  x.mouseenter(function(){
+    $(this).css('fill', '#ffffff');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('fill', '#292929');
+  });
+
+  x.click(function(){
+    $("#info1_termo").hide();
+    $("#info1_foto").hide();
+    $("#info1").show();
+  });
+})  
+
+
+$(document).ready(function(){
+  var x = $(".flechita2");
+  
+  x.mouseenter(function(){
+    $(this).css('fill', '#ffffff');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('fill', '#292929');
+  });
+
+  x.click(function(){
+    $("#info2_horizontal").hide();
+    $("#info2_vertical").hide();
+    $("#info2").show();
+  });
+})  
+
+$(document).ready(function(){
+  var x = $(".flechita3");
+  
+  x.mouseenter(function(){
+    $(this).css('fill', '#ffffff');
+  });
+  
+  x.mouseleave(function(){
+    $(this).css('fill', '#292929');
+  });
+
+  x.click(function(){
+    $("#info3_embalse").hide();
+    $("#info3_pasada").hide();
+    $("#info3_bombeo").hide();
+    $("#info3").show();
+  });
+})  
+
+
