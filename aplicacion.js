@@ -17,6 +17,8 @@ $(document).ready(function(){
       $("#resumen").css('display','block');
       $("#resumen").css('top',parseInt(window.event.pageY + 10) + "px");
       $("#resumen").css('left',parseInt(window.event.pageX + 10) + "px");
+      var infoRegion = $(this).attr("info");
+      $(infoRegion).show();
     });
   
     region.mouseleave(function(){
@@ -30,7 +32,11 @@ $(document).ready(function(){
 
     region.click(function(){
       $("#porregion").show();
-      $("#parametro1").css('margin-top', '360px');
+      var titleComuna = $(this).attr("title");
+      $("#tiporegion").text(titleComuna);
+      var infoRegion = $(this).attr("info");
+      $(infoRegion).show();
+      $("#parametro1").css('margin-top', '675px');
     })
 
   });

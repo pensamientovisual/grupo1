@@ -536,3 +536,13 @@ img.vertical{
     width: 450px;
     margin-left: 10px;    
 }
+
+#tiporegion{
+    font-size: 18px;
+}
+
+.info_region{
+    display: none;
+}
+
+
