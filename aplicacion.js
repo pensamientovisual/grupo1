@@ -50,6 +50,9 @@ $(document).ready(function(){
     $("#info3").hide();
     $("#info2").hide();
     $("#parametro1").show();
+    $("#num1").text("([5.6033333-6.99])");
+    $("#num2").text("([4.21666666 - 5.6033333])");
+    $("#num3").text("([2.83 - 4.21666666])");
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -83,7 +86,12 @@ $(document).ready(function(){
     $("#info2").show();
     $("#info1").hide();
     $("#info3").hide();
+    $("#info1_termo").hide();
+    $("#info1_foto").hide();
     $("#parametro1").show();
+    $("#num1").text("([8.16666667 - 10.2])");
+    $("#num2").text("([6.133333 - 8.16666667])");
+    $("#num3").text("([4.1 - 6.133333])");
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -117,7 +125,12 @@ $(document).ready(function(){
     $("#info3").show();
     $("#info2").hide();
     $("#info1").hide();
+    $("#info1_termo").hide();
+    $("#info1_foto").hide();
     $("#parametro1").show();
+    $("#num1").text("([7922.2 - 11883.3])");
+    $("#num2").text("([3961.1 - 7922.2])");
+    $("#num3").text("([0 - 3961.1])");    
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -149,6 +162,8 @@ $(document).ready(function(){
     $("#info3").hide();
     $("#info2").hide();
     $("#info1").hide();
+    $("#info1_foto").hide();
+    $("#info1_termo").hide();
     $(".region").each(function(){
       $(this).css('fill', '#aaa7a7');
       });
@@ -204,6 +219,30 @@ $(document).ready(function(){
       $(this).removeClass('transition');
   });
   
+});
+
+$(document).ready(function(){
+  $('.fotovoltaica').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.fotovoltaica').click(function(){
+    $("#info1").hide();
+    $("#info1_foto").show();
+  });
+});
+
+$(document).ready(function(){
+  $('.termosolares').hover(function() {
+      $(this).addClass('transition');
+  }, function() {
+      $(this).removeClass('transition');
+  });
+  $('.termosolares').click(function(){
+    $("#info1").hide();
+    $("#info1_termo").show();
+  });
 });
 
 $(document).ready(function(){

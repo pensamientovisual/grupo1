@@ -97,14 +97,12 @@
 
 .fotobomba{
     height: 300px;
-
 }
 
 #mapa{
     left: 10px;
-    margin-left: 490px;
+    margin-left: 550px;
     position: absolute;
-    
 }
 
 .region{
@@ -112,7 +110,6 @@
     text-align: right;
     stroke: #292929;
     stroke-width: 1px;
-    
 }
 
 .cerrar{ 
@@ -182,14 +179,13 @@
     color: #ffffff; 
     font-size: 14px; 
     font-weight: 0; 
-    text-align: justify; 
     background: #292929;
     margin-right: 100px; 
     overflow: hidden; 
     padding: 15px; 
     border-radius: 5px 5px 5px 5px;
     float: left; 
-    width: 300px;
+    width: 450px;
     margin-left: 10px;
     }
 
@@ -266,32 +262,28 @@ img.foto1 {
     transform: scale(1.2);
 }
 
-.region{cursor:url(curs.svg), auto;
-
-}
-
 
 #porregion{
-color: #ffffff; 
-            font-size: 14px; 
-            font-weight: 0; 
-            background: #292929;
-            margin-right: 0px; 
-            margin-left: 795px;
-            margin-top: 200px;
-            padding: 15px; 
-            border-radius: 5px 5px 5px 5px; 
-            -moz-border-radius: 5px 5px 5px 5px; 
-            -webkit-border-radius: 5px 5px 5px 5px; 
-            float: center;
-            width: 500px;
-            border: 2px solid #292929;
-            overflow: hidden; 
-            display: none;
-            z-index: 10000000;
-        }
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 0px; 
+    margin-left: 795px;
+    margin-top: 200px;
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px; 
+        -moz-border-radius: 5px 5px 5px 5px; 
+        -webkit-border-radius: 5px 5px 5px 5px; 
+    float: center;
+    width: 500px;
+    border: 2px solid #292929;
+    overflow: hidden; 
+    display: none;
+    z-index: 10000000;
+}
 
-cajapequena { 
+cajapequena{ 
     display: none;
     background: #292929;
     margin-right: 12px; 
@@ -301,7 +293,7 @@ cajapequena {
     float: right; 
     width: 20px;
     vertical-align: 1000px;
-        }
+}
 
 
 #parametro1{
@@ -317,7 +309,7 @@ cajapequena {
         -moz-border-radius: 5px 5px 5px 5px; 
         -webkit-border-radius: 5px 5px 5px 5px; 
     float: center;
-    width: 250px;
+    width: 400px;
     border: 2px solid #292929;
     overflow: hidden; 
     display: none;
@@ -341,6 +333,10 @@ cajapequena {
     color: #c5e2ac;
 }
 
+#num1{
+    display: inline-block;
+}
+
 .rango2{
     background-color: #689f38;
     border-radius: 50px;
@@ -349,10 +345,71 @@ cajapequena {
     color: #689f38;
 }
 
+#num2{
+    display: inline-block;
+    margin-top: 2px;
+    margin-bottom: 3px;
+}
+
 .rango3{
     background-color: #406222;
     border-radius: 50px;
     display: inline-block;
     width: 18px;
     color: #406222;
+}
+
+#num3{
+    display: inline-block;
+}
+
+.subenergia{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+img.fotovoltaica{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+img.termosolares{
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+#info1_foto{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;
+}
+
+#info1_termo{
+    display: none;
+    color: #ffffff; 
+    font-size: 14px; 
+    font-weight: 0; 
+    background: #292929;
+    margin-right: 100px; 
+    overflow: hidden; 
+    padding: 15px; 
+    border-radius: 5px 5px 5px 5px;
+    float: left; 
+    width: 450px;
+    margin-left: 10px;
 }
