@@ -17,8 +17,6 @@ $(document).ready(function(){
       $("#resumen").css('display','block');
       $("#resumen").css('top',parseInt(window.event.pageY + 10) + "px");
       $("#resumen").css('left',parseInt(window.event.pageX + 10) + "px");
-      var infoRegion = $(this).attr("info");
-      $(infoRegion).show();
     });
   
     region.mouseleave(function(){
@@ -34,9 +32,12 @@ $(document).ready(function(){
       $("#porregion").show();
       var titleComuna = $(this).attr("title");
       $("#tiporegion").text(titleComuna);
+      $(".region").each(function(){
+        var infoRegion = $(this).attr("info");
+        $(infoRegion).hide();
+        });
       var infoRegion = $(this).attr("info");
       $(infoRegion).show();
-      $("#parametro1").css('margin-top', '675px');
     })
 
   });
@@ -197,6 +198,8 @@ $(document).ready(function(){
     $("#info3_bombeo").hide();
     $(".region").each(function(){
       $(this).css('fill', '#aaa7a7');
+      var infoRegion = $(this).attr("info");
+      $(infoRegion).hide();
       });
     $("#parametro1").hide();
   });
@@ -350,9 +353,6 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#porregion").hide();
-    $("#parametro1").css('margin-top', '200px');
-    $(this).fadeTo("fast", 1);
-    $("#nombre").text("Seleccione una Región");
   });
   
 });
@@ -370,6 +370,7 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#parametro1").hide();
+    $("#porregion").css('margin-top','200px');
   });
   
 });
