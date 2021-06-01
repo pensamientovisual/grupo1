@@ -32,6 +32,7 @@ $(document).ready(function(){
       $("#porregion").show();
       var titleComuna = $(this).attr("title");
       $("#tiporegion").text(titleComuna);
+      $("#nombre").text(titleComuna);
       $(".region").each(function(){
         var infoRegion = $(this).attr("info");
         $(infoRegion).hide();
