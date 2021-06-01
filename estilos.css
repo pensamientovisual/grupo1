@@ -6,7 +6,7 @@
 }
 #pagina{
     width: 1250px;
-    height: 1700px;
+    height: 1750px;
     margin-left: 50px;
     margin-bottom: 50px;
     border: solid black 2px ;
@@ -161,20 +161,20 @@
     margin: 10px; 
     text-align: center;
 }
-.titulo{
+.titulo {
     color: #ffffff;
-    background-color:#689f38;
-    padding: 15px;
+    background-color: #689f38;
+    padding: 2% 2%;
+    text-align: center;
     display: inline-block;
-    margin-bottom: 5px;
-    width: 1220px;
-    margin-top: 0px;
-    z-index:1;
-    margin-right: 0px;
+    margin-bottom: 68px;
+    position: static;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 10px;
 }
 
 #titulo{
-    font-size:50px;
+    font-size:40px;
     font-family: 'Farro', sans-serif;
     text-align: center;
 }
@@ -310,7 +310,7 @@ cajapequena{
     font-size: 14px; 
     font-weight: 0; 
     background: #292929; 
-    margin-left: 811px;
+    margin-left: 806px;
     margin-top: 5px;
     padding: 15px; 
     border-radius: 5px 5px 5px 5px; 
@@ -558,7 +558,7 @@ img.vertical{
     font-size: 15px;
     position: absolute; 
     top: 1654px;
-    margin-left: 52px;
+    margin-left: 0px;
     width: 1220px;
     text-align: center;
 }
