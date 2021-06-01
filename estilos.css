@@ -5,24 +5,28 @@
     margin-right: git;
 }
 #pagina{
-    margin: 0px;
     width: 1250px;
-    margin-left: 91px;
+    height: 1700px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border: solid black 2px ;
 }
 
 .foto1 { 
     padding: 10px; 
     float: left; 
-    width: 15%; 
-    margin-top: 3px;
-    margin-left: 20px;
-    margin-right: 50px;
-    
+    width: 100px; 
+    margin-bottom: 10px;
 }
 .energia{
-    margin-left: 10%;
-    margin-right: 15%;
     display: inline-block;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#energias{
+    text-align: center;
+    margin-top: 10px;
 }
 .foto2 {  
     background-color:#292929;
@@ -53,19 +57,23 @@
 
 
 #caja { 
-            color: #ffffff; 
-            font-size: 14px; 
+            color: #292929; 
+            font-size: 20px; 
             font-weight: 0; 
-            background: #292929;
-            margin-right: 12px; 
             padding: 15px; 
             border-radius: 5px 5px 5px 5px; 
             -moz-border-radius: 5px 5px 5px 5px; 
             -webkit-border-radius: 5px 5px 5px 5px; 
-            float: right;
-            width: 400px;
-            border: 2px solid #292929;
+            float: center; 
+            margin-left: 50px; 
+            margin-right: 50px;
             vertical-align: 1000px;
+            margin-bottom: 50px;
+            margin-top: 200px;
+            text-align: center;
+            /*background-image: url('foto_fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;*/
         }
 
 .abrir {
@@ -155,23 +163,25 @@
 }
 .titulo{
     color: #ffffff;
-    background-color: #689f38;
-    padding: 2% 2%;
-    text-align: center;
+    background-color:#689f38;
+    padding: 15px;
     display: inline-block;
-    margin-bottom: 68px;
-    position: static;
-    border-radius: 5px 5px 5px 5px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 1220px;
+    margin-top: 0px;
+    z-index:1;
+    margin-right: 0px;
 }
 
 #titulo{
     font-size:50px;
     font-family: 'Farro', sans-serif;
+    text-align: center;
 }
 
 #bajada{
-    font-size:20px
+    font-size:20px;
+    text-align: center;
 }
 
 #info1{
@@ -267,9 +277,9 @@ img.foto1 {
     font-size: 14px; 
     font-weight: 0; 
     background: #292929;
-    margin-right: 0px; 
-    margin-left: 795px;
-    margin-top: 305px;
+    margin-right: 5px; 
+    margin-left: 706px;
+    margin-top: 10px;
     padding: 15px; 
     border-radius: 5px 5px 5px 5px; 
         -moz-border-radius: 5px 5px 5px 5px; 
@@ -280,7 +290,6 @@ img.foto1 {
     overflow: hidden; 
     display: none;
     z-index: 1000;
-    position: absolute;
 }
 
 cajapequena{ 
@@ -300,10 +309,9 @@ cajapequena{
     color: #ffffff; 
     font-size: 14px; 
     font-weight: 0; 
-    background: #292929;
-    margin-right: 0px; 
-    margin-left: 895px;
-    margin-top: 200px;
+    background: #292929; 
+    margin-left: 811px;
+    margin-top: 5px;
     padding: 15px; 
     border-radius: 5px 5px 5px 5px; 
         -moz-border-radius: 5px 5px 5px 5px; 
@@ -314,7 +322,6 @@ cajapequena{
     overflow: hidden; 
     display: none;
     z-index: 1000;
-    position: absolute;
 }
         
 .cerrar_parametro{ 
@@ -545,4 +552,14 @@ img.vertical{
     display: none;
 }
 
+.info_personal{
+    background-color: #689f38;
+    padding: 15px;
+    font-size: 15px;
+    position: absolute; 
+    top: 1654px;
+    margin-left: 52px;
+    width: 1220px;
+    text-align: center;
+}
 

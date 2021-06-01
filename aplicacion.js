@@ -111,7 +111,7 @@ $(document).ready(function(){
     $("#info3_pasada").hide();
     $("#info3_bombeo").hide();
     $("#parametro1").show();
-    $("#num1").text("([8.16 - 10.2])");
+    $("#num1").text("([8.16 - 10.2] kWh/m<sup>2</sup>)");
     $("#num2").text("([6.13 - 8.16])");
     $("#num3").text("([4.1 - 6.13])");
     $(".region").each(function(){
@@ -370,7 +370,6 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#parametro1").hide();
-    $("#porregion").css('margin-top','200px');
   });
   
 });
