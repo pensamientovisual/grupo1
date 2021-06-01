@@ -196,54 +196,9 @@ $(document).ready(function(){
     $("#info3_embalse").hide();
     $("#info3_pasada").hide();
     $("#info3_bombeo").hide();
-    $(".region").each(function(){
-      $(this).css('fill', '#aaa7a7');
-      var infoRegion = $(this).attr("info");
-      $(infoRegion).hide();
-      });
     $("#parametro1").hide();
   });
 });
-
-
-$(document).ready(function(){
-  var x = $(".cerrard");
-  
-  x.mouseenter(function(){
-    $(this).css('fill', '#ffffff');
-  });
-  
-  x.mouseleave(function(){
-    $(this).css('fill', '#292929');
-  });
-
-  x.click(function(){
-    $("#caja").hide();
-    $(".abrir").show();
-  });
-  
-});
-
-$(document).ready(function(){
-  var x = $(".abrir");
-  
-  x.mouseenter(function(){
-    $(this).css('background-color', '#689f38');
-    $(this).css('fill', '#292929');
-  });
-  
-  x.mouseleave(function(){
-    $(this).css('background-color', '#292929');
-    $(this).css('fill', '#689f38');
-  })
-
-  x.click(function(){
-    $("#caja").show();
-    $(".abrir").hide();
-  });
-  
-});
-
 
 $(document).ready(function(){
   $('.foto1').hover(function() {
@@ -253,8 +208,6 @@ $(document).ready(function(){
   });
   
 });
-
-
 
 $(document).ready(function(){
   $('.fotovoltaica').hover(function() {
@@ -353,6 +306,11 @@ $(document).ready(function(){
 
   x.click(function(){
     $("#porregion").hide();
+    $(".region").each(function(){
+      $(this).css('fill', '#aaa7a7');
+      var infoRegion = $(this).attr("info");
+      $(infoRegion).hide();
+      });
   });
   
 });

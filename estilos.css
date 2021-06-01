@@ -2,14 +2,12 @@
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
     margin-top: 0px;
     margin-left: 0px;
-    margin-right: git;
 }
 #pagina{
     width: 1250px;
-    height: 1750px;
-    margin-left: 50px;
+    height: 1900px;
+    margin-left: 10px;
     margin-bottom: 50px;
-    border: solid black 2px ;
 }
 
 .foto1 { 
@@ -69,7 +67,7 @@
             margin-right: 50px;
             vertical-align: 1000px;
             margin-bottom: 50px;
-            margin-top: 200px;
+            margin-top: 10px;
             text-align: center;
             /*background-image: url('foto_fondo.jpg');
             background-repeat: no-repeat;
@@ -108,8 +106,7 @@
 }
 
 #mapa{
-    left: 10px;
-    margin-left: 550px;
+    left: 535px;
     position: absolute;
 }
 
@@ -164,17 +161,17 @@
 .titulo {
     color: #ffffff;
     background-color: #689f38;
-    padding: 2% 2%;
-    text-align: center;
+    padding: 30px;
     display: inline-block;
-    margin-bottom: 68px;
+    margin-bottom: 5px;
     position: static;
     border-radius: 5px 5px 5px 5px;
     margin-top: 10px;
+    margin-left: 36px;
 }
 
 #titulo{
-    font-size:40px;
+    font-size:50px;
     font-family: 'Farro', sans-serif;
     text-align: center;
 }
@@ -278,14 +275,14 @@ img.foto1 {
     font-weight: 0; 
     background: #292929;
     margin-right: 5px; 
-    margin-left: 706px;
+    margin-left: 806px;
     margin-top: 10px;
     padding: 15px; 
     border-radius: 5px 5px 5px 5px; 
         -moz-border-radius: 5px 5px 5px 5px; 
         -webkit-border-radius: 5px 5px 5px 5px; 
     float: center;
-    width: 500px;
+    width: 400px;
     border: 2px solid #292929;
     overflow: hidden; 
     display: none;
@@ -544,22 +541,33 @@ img.vertical{
     margin-left: 10px;    
 }
 
+.bombeo{
+    width:190px;
+}
+
 #tiporegion{
     font-size: 18px;
 }
 
 .info_region{
     display: none;
+    line-height: 200%;
 }
+
 
 .info_personal{
     background-color: #689f38;
     padding: 15px;
     font-size: 15px;
     position: absolute; 
-    top: 1654px;
-    margin-left: 0px;
-    width: 1220px;
+    top: 1854px;
+    margin-left: -1px;
+    width: 1222px;
     text-align: center;
+}
+
+#captador_fondo{
+    width: 1250px;
+    margin-right: 0px;
 }
 
