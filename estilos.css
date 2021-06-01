@@ -362,6 +362,7 @@ img.foto1 {
 .subenergia{
     display: inline-block;
     margin-right: 10px;
+    height: 221.78px;
 }
 
 img.fotovoltaica{
@@ -369,7 +370,8 @@ img.fotovoltaica{
     -moz-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     -ms-transition: all .2s ease-in-out;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 25px;
 }
 
 img.termosolares{
