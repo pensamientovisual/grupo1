@@ -32,11 +32,18 @@ $(document).ready(function(){
       $("#porregion").show();
       var titleComuna = $(this).attr("title");
       $("#tiporegion").text(titleComuna);
-      $("#nombre").text(titleComuna);
       $(".region").each(function(){
         var infoRegion = $(this).attr("info");
         $(infoRegion).hide();
-        });
+        if ($(this).css('stroke','#421e04')){
+          $(this).css('stroke','#292929');
+          $(this).css('stroke-width','1px');
+        };
+      });  
+      if ($(this).css('stroke','#292929')){
+        $(this).css('stroke','#421e04');
+        $(this).css('stroke-width','2px');
+      };
       var infoRegion = $(this).attr("info");
       $(infoRegion).show();
     })
@@ -317,7 +324,6 @@ $(document).ready(function(){
   x.click(function(){
     $("#porregion").hide();
     $(".region").each(function(){
-      $(this).css('fill', '#aaa7a7');
       var infoRegion = $(this).attr("info");
       $(infoRegion).hide();
       });

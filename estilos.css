@@ -572,6 +572,7 @@ img.vertical{
 #captador_fondo{
     width: 1250px;
     margin-right: 0px;
+    border-radius: 5px 5px 5px 5px; 
 }
 
 .uni_hidro{
