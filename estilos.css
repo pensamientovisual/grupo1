@@ -6,7 +6,8 @@
 #pagina{
     width: 1250px;
     height: 1900px;
-    margin-left: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 50px;
 }
 
@@ -289,17 +290,6 @@ img.foto1 {
     z-index: 1000;
 }
 
-cajapequena{ 
-    display: none;
-    background: #292929;
-    margin-right: 12px; 
-    overflow: hidden; 
-    padding: 15px; 
-    border-radius: 5px 5px 5px 5px;
-    float: right; 
-    width: 20px;
-    vertical-align: 1000px;
-}
 
 
 #parametro1{
@@ -319,6 +309,7 @@ cajapequena{
     overflow: hidden; 
     display: none;
     z-index: 1000;
+    line-height: 175%;
 }
         
 .cerrar_parametro{ 
@@ -332,9 +323,9 @@ cajapequena{
 
 .rango1{
     background-color: #c5e2ac;
-    border-radius: 50px;
+    border-radius: 100px;
     display: inline-block;
-    width: 18px;
+    width: 25px;
     color: #c5e2ac;
 }
 
@@ -344,9 +335,9 @@ cajapequena{
 
 .rango2{
     background-color: #689f38;
-    border-radius: 50px;
+    border-radius: 100px;
     display: inline-block;
-    width: 18px;
+    width: 25px;
     color: #689f38;
 }
 
@@ -358,9 +349,9 @@ cajapequena{
 
 .rango3{
     background-color: #406222;
-    border-radius: 50px;
+    border-radius: 100px;
     display: inline-block;
-    width: 18px;
+    width: 25px;
     color: #406222;
 }
 
@@ -542,7 +533,19 @@ img.vertical{
 }
 
 .bombeo{
-    width:190px;
+    width:180px;
+}
+
+.termosolares{
+    width:200px;
+}
+
+.horizontal{
+    width:180px;
+}
+
+.vertical{
+    width:180px;
 }
 
 #tiporegion{
@@ -571,3 +574,14 @@ img.vertical{
     margin-right: 0px;
 }
 
+.uni_hidro{
+    display: none; 
+}
+
+.uni_eolico{
+    display: none; 
+}
+
+.uni_sol{
+    display: none;
+}

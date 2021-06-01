@@ -67,9 +67,12 @@ $(document).ready(function(){
     $("#info3_pasada").hide();
     $("#info3_bombeo").hide();
     $("#parametro1").show();
-    $("#num1").text("([5.603-6.99])");
-    $("#num2").text("([4.216 - 5.603])");
-    $("#num3").text("([2.83 - 4.216])");
+    $("#num1").text("([5.603-6.99]");
+    $("#num2").text("([4.216 - 5.603]");
+    $("#num3").text("([2.83 - 4.216]");
+    $(".uni_hidro").css('display','none');
+    $(".uni_eolico").css('display','none');
+    $(".uni_sol").css('display','inline-block'); 
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -111,9 +114,12 @@ $(document).ready(function(){
     $("#info3_pasada").hide();
     $("#info3_bombeo").hide();
     $("#parametro1").show();
-    $("#num1").text("([8.16 - 10.2] kWh/m<sup>2</sup>)");
-    $("#num2").text("([6.13 - 8.16])");
-    $("#num3").text("([4.1 - 6.13])");
+    $("#num1").text("([8.16 - 10.2]");
+    $("#num2").text("([6.13 - 8.16]");
+    $("#num3").text("([4.1 - 6.13]");
+    $(".uni_hidro").css('display','none');
+    $(".uni_eolico").css('display','inline-block');
+    $(".uni_sol").css('display','none'); 
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
@@ -155,9 +161,12 @@ $(document).ready(function(){
     $("#info3_pasada").hide();
     $("#info3_bombeo").hide();
     $("#parametro1").show();
-    $("#num1").text("([7922.2 - 11883.3])");
-    $("#num2").text("([3961.1 - 7922.2])");
-    $("#num3").text("([0 - 3961.1])");    
+    $("#num1").text("([7922.2 - 11883.3]");
+    $("#num2").text("([3961.1 - 7922.2]");
+    $("#num3").text("([0 - 3961.1]");
+    $(".uni_hidro").css('display','inline-block');
+    $(".uni_eolico").css('display','none');
+    $(".uni_sol").css('display','none'); 
     $(".region").each(function(){
       var dataRegion = $(this).attr("data");
       var listadata = dataRegion.split(",");
